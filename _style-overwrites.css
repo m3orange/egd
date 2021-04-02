@@ -1568,42 +1568,6 @@ header a.logo img {
 
 
 
-#section-home{
-    /* background-image: url('images-m3/slider-hero/homepage-hero-01.jpg');*/
-    height: 100vh!important;
-}
-
-#section-home .opacity-extra-medium {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-
-    top: 0;
-    left: 0;
-    /*
-    background-color: #000000 ;
-    background: url("images-m3/bg-screens/dots-01.png");
-       background-image: radial-gradient(black 50%, transparent 50%);
-    background-size: 2px 2px; */
-    background-image: url("images-m3/bg-screens/dots-02.svg");
-    background-size: 8px;
-    opacity: .6;
-
-}
-
-            @media (max-width: 767px) {
-                #section-home .mobile-height, 
-                #section-home .swiper-full-screen {
-                    height: 90vh!important;
-                }
-
-                #section-home{
-                    background-image: url('images-m3/slider-hero/mob-6.jpg');
-                    height: 85vh!important;
-                }
-
-            }
-
 
             @media (min-width: 1201px) {
                 .aquaviva-logo-area img{
@@ -1790,3 +1754,80 @@ swiper-container white-move swiper-container-initialized swiper-container-horizo
     height: 110vh;
     
 }
+
+
+
+
+
+#section-home{
+    /* background-image: url('images-m3/slider-hero/homepage-hero-01.jpg');*/
+    height: 100vh!important;
+}
+
+#section-home .opacity-extra-medium {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+    /*
+    background-color: #000000 ;
+    background: url("images-m3/bg-screens/dots-01.png");
+       background-image: radial-gradient(black 50%, transparent 50%);
+    background-size: 2px 2px; */
+    background-image: url("images-m3/bg-screens/dots-02.svg");
+    background-size: 8px;
+    opacity: .6;
+}
+
+#section-home .hero-video {
+    background-color: #000;
+    height: auto;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+
+    width: auto;
+    z-index: -3;
+    /*
+    position: absolute;
+    top: 50%;
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        */
+    display: flex;
+
+}
+
+
+            @media (max-width: 767px) {
+
+                /*
+                #section-home .mobile-height, 
+                #section-home .swiper-full-screen {
+                    height: 90vh!important;
+                }
+                */
+
+
+                #section-home{
+                    height: 75vh!important;
+                    display: flex;
+                    justify-content: center;
+
+                }
+
+                #section-home .hero-video {
+                    /* max-width: 130%;
+                    max-height: 50%; */
+                    left: 20%!important;
+                    padding: 20% 0 53% 0;
+                    min-width: auto!important;
+                }
+
+
+            }
