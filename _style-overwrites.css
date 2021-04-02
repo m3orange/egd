@@ -1398,8 +1398,20 @@ header a.logo img {
 }
 
         @media (max-width: 767px) {
+
+            /* 
             .down-section {
-                bottom: 40px;
+                /ottom: 8px;
+            }
+            */
+
+            .scroll-down-arrow i {
+                color: #FFFFFF;
+                font-size: 20px;
+            }
+
+            .scroll-down-arrow .bg-deep-pink{
+                background-color: #FF7700;
             }
 
             .button-area{
@@ -1409,6 +1421,11 @@ header a.logo img {
             .btn-resume a, .btn-portfolio a{
                 padding: 10px 16px;
             }
+
+            .down-section, .scroll-down-arrow {
+                visibility: hidden;
+            }
+
         } 
             
 
