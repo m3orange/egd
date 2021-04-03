@@ -2,8 +2,6 @@
 
 /* ----------------------------------
 
-210401_2250
-
 Name: style.css
 Version: 2.3
 
@@ -1398,20 +1396,8 @@ header a.logo img {
 }
 
         @media (max-width: 767px) {
-
-            /* 
             .down-section {
-                bottom: 8px;
-            }
-            */
-
-            .scroll-down-arrow i {
-                color: #FFFFFF;
-                font-size: 20px;
-            }
-
-            .scroll-down-arrow .bg-deep-pink{
-                background-color: #FF7700;
+                bottom: 40px;
             }
 
             .button-area{
@@ -1421,11 +1407,6 @@ header a.logo img {
             .btn-resume a, .btn-portfolio a{
                 padding: 10px 16px;
             }
-
-            .down-section, .scroll-down-arrow {
-                visibility: hidden;
-            }
-
         } 
             
 
@@ -1476,115 +1457,133 @@ header a.logo img {
 
 
 
-.hero-orange-box{
-    background-color: #FF7700;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    font-size: 45px;
-    line-height: 1.1em;
-    height: auto;
-    color: #FFFFFF
+        .hero-orange-box{
+            background-color: #FF7700;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            font-size: 45px;
+            line-height: 1.1em;
+            height: auto;
+            color: #FFFFFF
+        }
+        
+                            @media (min-device-width: 1601px){ 
+                                .hero-orange-box{
+                                    width: 50%;
+                                    height: auto;
+                                    padding: 70px 110px;
+                                }
+                            }
+        
+        
+        /*
+                            @media (max-device-width: 1200px) and (orientation: landscape) { 
+                                .hero-orange-box{
+                                    width: 100%;
+                                    text-align: right;
+                                    font-size: 30px;
+                                    height: auto;
+                                    padding: 20px 40px 20px 300px;
+                                    color: turquoise;
+                                }
+                            }
+                            */
+                            
+        
+                            @media (min-device-width: 780px) and (max-device-width: 1600px){ 
+                                .hero-orange-box{
+                                    width: 73%;
+                                    height: auto;
+                                    padding: 50px 90px;
+                                    text-align: right;
+                                }
+                            }
+                            
+        
+                            @media (min-device-width: 500px) and (max-device-width: 780px) and 
+                            (orientation: portrait) { 
+                                .hero-orange-box{
+                                    width: 68%;
+                                    height: auto;
+                                    padding: 62px;
+                                }
+                            }
+        
+                            @media (min-device-width: 500px) and (max-device-width: 900px) and 
+                            (orientation: landscape) { 
+                                .hero-orange-box{
+                                    width: 70%;
+                                    /* height: 35%; */
+                                    font-size: 30px;
+                                    padding: 30px 70px 120px 70px;
+                                    text-align: right;
+                                }
+                            }
+        
+                            @media only screen 
+                            and (min-width: 375px) and (max-width: 812px) 
+                            and (-webkit-min-device-pixel-ratio: 3)
+                            and (orientation: portrait){
+                                .hero-orange-box{
+                                    width: 70%;
+                                    /* height: 35%; */
+                                    font-size: 30px;
+                                    padding: 30px 70px 120px 70px;
+                                    text-align: right;
+                                }
+                            }
+        
+                            /* ---- ip6/7/8 landscape  ----- */
+                            @media only screen and (max-device-width: 812px) and (max-device-height: 414px) 
+                            and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2){
+                                .hero-orange-box{
+                                    width: 70%;
+                                    /* height: 35%; */
+                                    font-size: 30px;
+                                    padding: 30px 70px 120px 70px;
+                                    text-align: right;
+                                }
+                            } 
+        
+                            @media (max-width: 499px) {
+                                .hero-orange-box{
+                                    width: 100%;
+                                    height: auto;
+                                    font-size: 34px;
+                                    padding: 50px 40px;
+                                    text-align: left;
+                                }
+                            }
+        
+        
+        /*
+                            .hero-orange-box{
+                                color: #FFFFFF;
+                            }
+        
+        */
+
+
+
+
+#section-home{
+    background-image: url('images-fpo/homepage-9-slider-img-1.jpg');
+    height: 100vh!important;
 }
 
-                    @media (min-device-width: 1601px){ 
-                        .hero-orange-box{
-                            width: 50%;
-                            height: auto;
-                            padding: 70px 110px;
-                        }
-                    }
+            @media (max-width: 767px) {
+                #section-home .mobile-height, 
+                #section-home .swiper-full-screen {
+                    height: 90vh!important;
+                }
 
+                #section-home{
+                    background-image: url('images-m3/slider-hero/mob-6.jpg');
+                    height: 85vh!important;
+                }
 
-/*
-                    @media (max-device-width: 1200px) and (orientation: landscape) { 
-                        .hero-orange-box{
-                            width: 100%;
-                            text-align: right;
-                            font-size: 30px;
-                            height: auto;
-                            padding: 20px 40px 20px 300px;
-                            color: turquoise;
-                        }
-                    }
-                    */
-                    
-
-                    @media (min-device-width: 780px) and (max-device-width: 1600px){ 
-                        .hero-orange-box{
-                            width: 73%;
-                            height: auto;
-                            padding: 50px 90px;
-                            text-align: right;
-                        }
-                    }
-                    
-
-                    @media (min-device-width: 500px) and (max-device-width: 780px) and 
-                    (orientation: portrait) { 
-                        .hero-orange-box{
-                            width: 68%;
-                            height: auto;
-                            padding: 62px;
-                        }
-                    }
-
-                    @media (min-device-width: 500px) and (max-device-width: 900px) and 
-                    (orientation: landscape) { 
-                        .hero-orange-box{
-                            width: 60%;
-                            /* height: 35%; */
-                            font-size: 30px;
-                            padding: 30px 70px ;
-                            text-align: right;
-                        }
-                    }
-
-                    @media only screen 
-                    and (min-width: 375px) and (max-width: 812px) 
-                    and (-webkit-min-device-pixel-ratio: 3)
-                    and (orientation: portrait){
-                        .hero-orange-box{
-                            width: 70%;
-                            /* height: 35%; */
-                            font-size: 30px;
-                            padding: 30px 70px 120px 70px;
-                            text-align: right;
-                        }
-                    }
-
-                    /* ---- ip6/7/8 landscape  ----- */
-                    @media only screen and (max-device-width: 812px) and (max-device-height: 414px) 
-                    and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2){
-                        .hero-orange-box{
-                            width: 70%;
-                            /* height: 35%; */
-                            font-size: 30px;
-                            padding: 30px 70px;
-                            text-align: right;
-                        }
-                    } 
-
-                    @media (max-width: 499px) {
-                        .hero-orange-box{
-                            width: 100%;
-                            height: auto;
-                            font-size: 34px;
-                            padding: 50px 40px;
-                            text-align: left;
-                        }
-                    }
-
-
-/*
-                    .hero-orange-box{
-                        color: #FFFFFF;
-                    }
-
-*/
-
-
-
+            }
 
 
             @media (min-width: 1201px) {
@@ -1681,16 +1680,10 @@ swiper-container white-move swiper-container-initialized swiper-container-horizo
                 } 
 
                 .grid-portfolio{
-                    width: 100%;
-                    /* border: 1px solid green; */
-                    padding: 0 0 0 30px;
+                    max-width: 96%;
+                    border: 1px solid green;
                 }
-
-                .portfolio-grid-container .row{
-                    margin-right: -35px;
-                    margin-left: -30px;
-                }
-
+                
 
             }
 
@@ -1715,332 +1708,3 @@ swiper-container white-move swiper-container-initialized swiper-container-horizo
                 }
             }
 
-
-/*  ---------- Arrows in slideshow modals ------------- */
-
-
-
-/*
-
-
-.mfp-arrow:before, .mfp-arrow:after{
-    margin-top: 0px;
-}
-.mfp-arrow {
-    width: 90px;
-    height: 95px;
-}
-
-
-*/
-
-.mfp-arrow{
-    width: 90px;
-    height: 92px;
-}
-
-.mfp-arrow-right:before, .mfp-arrow-left:before {
-    border-left: none;
-    font-size: 2em;
-    font-family: 'themify';
-    color: #fff;
-}
-
-.button.mfp-close, button.mfp-arrow{
-    background: rgba(255,255,255,0.4);
-}
-
-.mfp-arrow:before{
-    border-top-width: 0px;
-}
-
-.mfp-counter {
-    color: rgba(255,255,255,0.4);
-}
-
-/*  ---------- Arrows in slideshow modals ------------- */
-.education-bullets,
-.education-bullets ul{
-    padding-left: 15px!important;
-    list-style-position: outside!important;
-    list-style-type: square!important;
-
-}
-
-.education-bullets li{
-    padding-left: 0px!important;
-}
-
-
-        @media (max-device-width: 600px) and (orientation: portrait) { 
-                .education-bullets,  .education-bullets ul{
-                    max-width: 70%!important;
-            }
-        }
-
-
-.fullscreen-video-container iframe{
-    /*
-    background-size: cover;
-    background: url(https://vimeo.com/532430417);
-    */   
-    height: 110vh;
-    
-}
-
-
-#section-home{
-    /* background-image: url('images-m3/slider-hero/homepage-hero-01.jpg');*/
-    height: 100vh!important;
-}
-
-#section-home .opacity-extra-medium {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    /*
-    background-color: #000000 ;
-    background: url("images-m3/bg-screens/dots-01.png");
-       background-image: radial-gradient(black 50%, transparent 50%);
-    background-size: 2px 2px; */
-    background-image: url("images-m3/bg-screens/dots-02.svg");
-    background-size: 8px;
-    opacity: 0.6;
-    z-index: 4;
-}
-
-
-#section-home .swiper-container{
-    z-index: 1;
-}
-
-#section-home .swiper-pagination{
-    z-index: 20;
-}
-
-
-
-.hero-orange-box{
-    z-index: 5;
-}
-
-
-
-
-            @media (max-width: 499px) and (orientation: portrait){
-                #section-home{
-                    height:80vh!important;
-                    display: flex;
-                    justify-content: center;
-                        /* border: 3px solid aqua; */
-
-                }
-
-                #section-home .hero-video {
-                    left: 20%!important;
-                    padding: 22% 0 48% 0;
-                    min-width: auto!important;
-                }
-            }
-
-
-
-            @media (min-device-width: 500px) and (max-device-width: 1200px) and 
-            (orientation: portrait) { 
-
-                /* DO NOT CHANGE THIS - TOOK ME FOREVER! */
-                    #section-home{
-                        height:65vh!important;
-                        display: flex;
-                        justify-content: center;
-                    }
-
-                    #section-home .hero-video {
-                        left: 20%!important;
-                        padding: 0% 0 22% 0;
-                        min-width: auto!important;
-                    }
-
-                    .hero-orange-box{
-                        width: 102%;
-                        height: auto;
-                        padding: 50px 60px;
-                        text-align: right;
-                    }
-
-                    .down-section, .scroll-down-arrow {
-                        visibility: hidden;
-                    }
-            }
-
-            @media (max-device-width: 800px) { 
-
-                #section-00 {
-                    padding-top: 65px;
-                }
-
-            }
-
-
-            
-.hero-video-in-frame{
-    width: 100%;
-    height: 100%;
-
-}
-
-
-
-/* -------- Toggling between HTML5 video and Vimeo video as bg ------ */
-
-
-            
-.vimeo-wrapper {
-    background-color: #000000 ;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    pointer-events: none;
-    overflow: hidden;
-
-}
-.vimeo-wrapper iframe {
-    width: 102vw;
-    height: 102vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-    min-height: 102vh;
-    min-width: 102vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-
-
-        @media (min-device-width:501px) and (max-device-width:1370px) and (orientation: landscape) {
-
-            .vimeo-wrapper {
-                background-color: #000000 ;
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                z-index: -1;
-                pointer-events: none;
-                overflow: hidden;
-
-            }
-            
-            .vimeo-wrapper iframe {
-                width: 120vw;
-                min-width: 120vw;
-                height: 102vh;
-                min-height: 99vh;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-        }
-
-
-        /* This is just iPad and iPad Pro in PORTRAIT */
-        @media (min-device-width:768px) and (max-device-width:1024px) and (orientation: portrait) {
-            .vimeo-wrapper {
-                border: none;
-            }
-            
-            .vimeo-wrapper iframe {
-                width: 102vw;
-                min-width: 102vh;
-                height: 102vw;
-                min-height: 102vh;
-                position: absolute;
-                top: 30%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-
-        }
-
-
-
-        /* This is iPhone only */
-        @media (max-device-width:767px) and (orientation: portrait) {
-
-            .vimeo-wrapper {
-                position: relative;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 71vh;
-                z-index: -1;
-                pointer-events: none;
-                overflow: hidden;
-                background-color: #000;
-                    /* border: 4px solid yellow;*/
-            }
-
-            .vimeo-wrapper iframe {
-                width: 118vw;
-                max-width: 118vw;
-                min-width: 118vw;
-                height: 68vh;
-                max-height: 68vh;
-                min-height: 68vh;
-                position: absolute;
-                top: 42%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-/*
-            #section-home .hero-video {
-                visibility: hidden!important;
-            }
-*/
-            
-
-
-            #section-home .opacity-extra-medium{
-                opacity: 0.55;
-            }
-            
-        }
-
-            /* This is iPhone only
-            @media (min-device-width: 476) and (max-device-width:700px) and (orientation: portrait) {
-                #section-home {
-                    height: 15vh!important;
-                }
-            }
-             */
-
-            /* This is iPhone only */
-            @media (max-device-width:475px) and (orientation: portrait) {
-                #section-home {
-                    height:70vh!important;
-                }
-            }
-
-
-
-            /* This is iPhone only */
-            @media (max-device-width:375px) and (orientation: portrait) {
-                #section-home {
-                    height:80vh!important;
-                }
-            }
-
-
-
-
-
-
-
-/* -------- Toggling between HTML5 video and Vimeo video as bg ------ */
