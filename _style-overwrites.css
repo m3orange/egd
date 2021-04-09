@@ -1899,7 +1899,8 @@ swiper-container white-move swiper-container-initialized swiper-container-horizo
             
 .vimeo-wrapper {
     background-color: #000000 ;
-    position: fixed;
+        /* position: fixed; This was causing the video to be "stuck" in the bg, and be seen in sections where there were bg's fading in and out. */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
